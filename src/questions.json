@@ -1,0 +1,213 @@
+[
+  {
+    "id": 1,
+    "question": "Which planet is closest to the Sun?",
+    "options": ["Venus", "Mercury", "Earth", "Mars"],
+    "answer": "Mercury"
+  },
+  {
+    "id": 2,
+    "question": "Which data structure organizes items in a First-In, First-Out (FIFO) manner?",
+    "options": ["Stack", "Queue", "Tree", "Graph"],
+    "answer": "Queue"
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is primarily used for structuring web pages?",
+    "options": ["Python", "Java", "HTML", "C++"],
+    "answer": "HTML"
+  },
+  {
+    "id": 4,
+    "question": "Which chemical symbol stands for Gold?",
+    "options": ["Au", "Ag", "Gd", "Pt"],
+    "answer": "Au"
+  },
+  {
+    "id": 5,
+    "question": "Which of these processes is not typically involved in refining petroleum?",
+    "options": [
+      "Fractional distillation",
+      "Cracking",
+      "Polymerization",
+      "Filtration"
+    ],
+    "answer": "Filtration"
+  },
+  {
+    "id": 6,
+    "question": "What is JSX?",
+    "options": ["Syntax", "Database", "Server", "None of these"],
+    "answer": "Syntax"
+  },
+  {
+    "id": 7,
+    "question": "Who developed the theory of relativity?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Stephen Hawking"
+    ],
+    "answer": "Albert Einstein"
+  },
+  {
+    "id": 8,
+    "question": "Which is the largest ocean on Earth?",
+    "options": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean",
+      "Pacific Ocean"
+    ],
+    "answer": "Pacific Ocean"
+  },
+  {
+    "id": 9,
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["China", "Japan", "India", "South Korea"],
+    "answer": "Japan"
+  },
+  {
+    "id": 10,
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+    "answer": "Mitochondria"
+  },
+  {
+    "id": 11,
+    "question": "Who painted the Mona Lisa?",
+    "options": [
+      "Vincent van Gogh",
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Michelangelo"
+    ],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "id": 12,
+    "question": "Which language is primarily used for Android app development?",
+    "options": ["Swift", "Java", "Kotlin", "C#"],
+    "answer": "Kotlin"
+  },
+  {
+    "id": 13,
+    "question": "What does HTTP stand for?",
+    "options": [
+      "Hyper Text Transfer Protocol",
+      "Hyper Text Transmission Process",
+      "High Transfer Text Protocol",
+      "Hyperlink Transfer Protocol"
+    ],
+    "answer": "Hyper Text Transfer Protocol"
+  },
+  {
+    "id": 14,
+    "question": "Which gas do plants primarily use for photosynthesis?",
+    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+    "answer": "Carbon Dioxide"
+  },
+  {
+    "id": 15,
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "answer": "Paris"
+  },
+  {
+    "id": 16,
+    "question": "Which programming language is used to style web pages?",
+    "options": ["HTML", "CSS", "JavaScript", "PHP"],
+    "answer": "CSS"
+  },
+  {
+    "id": 17,
+    "question": "What is the smallest unit of life?",
+    "options": ["Tissue", "Organ", "Cell", "Atom"],
+    "answer": "Cell"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is not a primary color?",
+    "options": ["Red", "Green", "Blue", "Yellow"],
+    "answer": "Green"
+  },
+  {
+    "id": 19,
+    "question": "Who wrote 'Hamlet'?",
+    "options": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Jane Austen",
+      "Mark Twain"
+    ],
+    "answer": "William Shakespeare"
+  },
+  {
+    "id": 20,
+    "question": "Which country is the largest by area?",
+    "options": ["China", "United States", "Russia", "Canada"],
+    "answer": "Russia"
+  },
+
+  {
+    "id": 21,
+    "question": "What is the value of 12 + 28?",
+    "options": ["30", "40", "50", "60"],
+    "answer": "40"
+  },
+  {
+    "id": 22,
+    "question": "How many states are there in the United States?",
+    "options": ["48", "49", "50", "51"],
+    "answer": "50"
+  },
+  {
+    "id": 23,
+    "question": "In which year was the Declaration of Independence signed?",
+    "options": ["1770", "1776", "1782", "1800"],
+    "answer": "1776"
+  },
+  {
+    "id": 24,
+    "question": "What is the value of pi rounded to the nearest integer?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3"
+  },
+  {
+    "id": 25,
+    "question": "If a car travels at 60 mph for 2 hours, how many miles does it travel?",
+    "options": ["100", "110", "120", "130"],
+    "answer": "120"
+  },
+  {
+    "id": 26,
+    "question": "How many continents are there on Earth?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7"
+  },
+  {
+    "id": 27,
+    "question": "How many legs does a spider have?",
+    "options": ["6", "8", "10", "12"],
+    "answer": "8"
+  },
+  {
+    "id": 28,
+    "question": "What is 9 multiplied by 7?",
+    "options": ["56", "63", "72", "81"],
+    "answer": "63"
+  },
+  {
+    "id": 29,
+    "question": "How many elements are in the periodic table?",
+    "options": ["108", "112", "118", "126"],
+    "answer": "118"
+  },
+  {
+    "id": 30,
+    "question": "How many hours are in a day?",
+    "options": ["12", "18", "24", "30"],
+    "answer": "24"
+  }
+]
