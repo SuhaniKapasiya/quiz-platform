@@ -1,11 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Quiz from "./pages/Quiz";
+import Results from "./pages/Results";
+import History from "./pages/History";
 
 function App() {
   return (
-    <div className="App">
-     <h1 className='bg-red-700'>Suhani</h1>
-    </div>
+    <BrowserRouter>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quiz" element={<Quiz />} />
+          <Route path="/results" element={<Results />} />
+          <Route path="/history" element={<History />} />
+        </Routes>
+      </Router>
+    </BrowserRouter>
   );
 }
 
