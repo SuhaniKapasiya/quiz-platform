@@ -8,9 +8,14 @@ function History() {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
+
     const fetchAttempts = async () => {
+
       const attempts = await getAttempts();
+      console.log("History",attempts);
+      
       setHistory(attempts);
+
     };
 
     fetchAttempts();

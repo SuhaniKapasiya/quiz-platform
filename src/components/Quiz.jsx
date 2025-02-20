@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { saveAttempt } from "../db";
 
 function Quiz() {
+
+
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
 
@@ -18,11 +20,17 @@ function Quiz() {
     currentQuestion,
     setCurrentQuestion,
     questions,
-    setFeedback
+    setFeedback,
+    selectedAnswer,
   );
 
   const handleAnswer = (option) => {
+
+
+    if (timeLeft === 0) return; // Prevents answering if time is up
+
     setSelectedAnswer(option);
+
     let updatedScore = score;
     if (option === questions[currentQuestion].answer) {
       updatedScore = score + 1;

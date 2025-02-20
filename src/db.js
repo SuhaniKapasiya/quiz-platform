@@ -12,6 +12,8 @@ export const initDB = async () => {
 
 export const saveAttempt = async (attempt) => {
 
+  console.log("attempts", attempt);
+  
   const db = await initDB();
   await db.add("attempts", attempt);
 
