@@ -1,70 +1,128 @@
-# Getting Started with Create React App
+# Quiz App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based quiz application that allows users to answer multiple-choice questions, receive feedback, and save quiz history using IndexedDB.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
 
-### `npm start`
+[Live Demo](https://your-live-demo-link.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- 🕒 **Timer-Based Quiz**: Each question has a countdown timer.
+- ✅ **Feedback System**: Provides positive or negative feedback based on the user's answer.
+- 📜 **Quiz History Storage**: Saves quiz attempts using IndexedDB.
+- 📊 **Score Tracking**: Displays the final score at the end of the quiz.
+- 🔄 **Responsive UI**: Works on desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+Make sure you have **Node.js** and **npm** installed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Clone the Repository
+```sh
+git clone https://github.com/SuhaniKapasiya/quiz-platform.git
+cd quiz-platform
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Install Dependencies
+```sh
+npm install
+```
 
-### `npm run eject`
+### Start the Development Server
+```sh
+npm start
+```
+This will start the app on `http://localhost:3000/`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Project Structure
+```
+QUIZ-PLATFORM/
+│-- node_modules/
+│-- public/
+│-- src/
+│   ├── components/
+│   │   ├── History.jsx
+│   │   ├── Home.jsx
+│   │   ├── Quiz.jsx
+│   │   ├── Results.jsx
+│   ├── hook/
+│   │   ├── useQuizTimer.js
+│   ├── App.js
+│   ├── App.test.js
+│   ├── db.js
+│   ├── index.css
+│   ├── index.js
+│   ├── logo.svg
+│   ├── questions.json
+│   ├── reportWebVitals.js
+│-- README.md
+│-- package.json
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📌 Usage
 
-## Learn More
+1. **Start the Quiz**: Select an answer from multiple choices.
+2. **Receive Feedback**: Get instant feedback after each answer.
+3. **Score Calculation**: Your score updates dynamically.
+4. **Save Quiz Attempt**: Your quiz history is saved using IndexedDB.
+5. **View Quiz History**: Past quiz attempts can be viewed on the Results page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💾 Working with IndexedDB
+This project uses the `idb` library to store quiz attempts.
 
-### Code Splitting
+### Initialize Database
+```js
+import { openDB } from "idb";
+export const initDB = async () => {
+  return openDB("quizDB", 1, {
+    upgrade(db) {
+      db.createObjectStore("attempts", { keyPath: "id", autoIncrement: true });
+    },
+  });
+};
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Save an Attempt
+```js
+export const saveAttempt = async (attempt) => {
+  const db = await initDB();
+  await db.add("attempts", attempt);
+};
+```
 
-### Analyzing the Bundle Size
+### Retrieve Attempts
+```js
+export const getAttempts = async () => {
+  const db = await initDB();
+  return await db.getAll("attempts");
+};
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🤝 Contributing
+Feel free to contribute! Open an issue or submit a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📝 License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📧 Contact
+For any questions, reach out at **suhanikapasiya2018@gmail.com**.
