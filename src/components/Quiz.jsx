@@ -88,7 +88,7 @@ function Quiz() {
           <button
             key={index}
             onClick={() => handleAnswer(option)}
-            className={`py-2 px-4 m-2 rounded ${
+            className={`py-2 px-4 m-2 rounded w-48 ${
               selectedAnswer === option
                 ? "bg-gray-500"
                 : "bg-blue-500 hover:bg-blue-700"
