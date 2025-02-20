@@ -6,7 +6,7 @@ A simple React-based quiz application that allows users to answer multiple-choic
 
 ## 🚀 Live Demo
 
-[Live Demo](https://your-live-demo-link.com)
+[Live Demo](https://quiz-platform-silk.vercel.app/history)
 
 ---
 
